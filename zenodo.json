@@ -1,0 +1,23 @@
+{
+  "title": "Rank-One Access Fisher-Information Reproducibility Package",
+  "description": "Source code, numerical data, regression tests, figure-generation scripts, and LaTeX sources supporting the manuscript 'Fisher information under rank-one access: exact information routing, geometric scaling laws, and finite-time limits'.",
+  "creators": [
+    {
+      "name": "Vishwakarma, Aishwarya",
+      "affiliation": "Department of Quantum Matter Physics, University of Geneva"
+    }
+  ],
+  "keywords": [
+    "quantum metrology",
+    "quantum sensing",
+    "Fisher information",
+    "input-output theory",
+    "open quantum systems",
+    "subradiance",
+    "reproducible research"
+  ],
+  "version": "1.0.0",
+  "upload_type": "software",
+  "access_right": "open",
+  "notes": "Choose and add the intended software/data license before using this template as active Zenodo metadata."
+}

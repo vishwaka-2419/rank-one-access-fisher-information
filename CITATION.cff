@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use the code or numerical data in this repository, please cite this software release and the associated manuscript."
+title: "Rank-One Access Fisher-Information Reproducibility Package"
+type: software
+version: 1.0.0
+date-released: 2026-09-12
+authors:
+  - family-names: "Vishwakarma"
+    given-names: "Aishwarya"
+keywords:
+  - quantum metrology
+  - quantum sensing
+  - Fisher information
+  - input-output theory
+  - open quantum systems
+  - non-Hermitian sensing
+  - subradiance
+  - reproducible research
+abstract: >-
+  Reproducibility package for the manuscript "Fisher information under
+  rank-one access: exact information routing, geometric scaling laws, and
+  finite-time limits". The archive contains source code, regression tests,
+  processed numerical data and figure-generation scripts.
