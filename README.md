@@ -31,3 +31,12 @@ Use `./build.sh --full` to recompute the expensive scans rather than redraw them
 
 The package treats finite-dimensional passive Markovian linear input-output networks and coherent-state quantum Fisher information. It does not claim a nonclassical-probe advantage or a universal strong-drive interacting result.
 
+## v1.1.0 — revision
+
+To reproduce the revised calculations and figures, run these commands
+from the repository root:
+
+```bash
+python -m pip install -r requirements.txt
+bash revision-scripts/run_all.sh
+```
