@@ -1,0 +1,28 @@
+== (a) access identity; reciprocity classification ==
+ ensemble                                               | H0 recip. | H_eff recip. | max err port | max err all | max|eta_in-eta_out|
+ real-symmetric H0, diagonal loss                       | True      | True         | 7.4e-16      | 1.3e-15     | 6.11e-16   (165 connected instances of 180)
+ flux (complex Hermitian) H0, diagonal loss             | False     | False        | 8.8e-16      | 4.7e-15     | 4.39e-01   (164 connected instances of 180)
+ real-symmetric H0, real-symmetric non-diagonal loss    | True      | True         | 1.0e-15      | 1.3e-14     | 4.44e-15   (180 connected instances of 180)
+ real-symmetric H0, complex-Hermitian non-diagonal loss | True      | False        | 7.0e-16      | 7.7e-15     | 4.16e-01   (180 connected instances of 180)
+ flux H0, complex-Hermitian non-diagonal loss           | False     | False        | 7.8e-16      | 2.6e-14     | 4.61e-01   (180 connected instances of 180)
+
+== (b) lossless one-port network at a closed-network eigenfrequency: F = 64 (w_s/w_p)^2/kappa^2 exactly ==
+  real symmetric       H0: max relative deviation over 195 random graphs (of 200 drawn), 0.02 <= kappa/J <= 2: 5.3e-11
+  flux (nonreciprocal) H0: max relative deviation over 193 random graphs (of 200 drawn), 0.02 <= kappa/J <= 2: 1.3e-12
+
+== (c) Hatano-Nelson chain with passive (dissipative) asymmetric hopping ==
+  delta=0.0: local loss=0.00, min eig(Gamma)=+0.000e+00; |G_1s G_s1 - reciprocal partner|/|.| = 0.0e+00; eta_in=1.000e+00, eta_out=1.000e+00; F/F(lossless reciprocal)=1.000e+00
+  delta=0.05: local loss=0.20, min eig(Gamma)=+6.283e-03; |G_1s G_s1 - reciprocal partner|/|.| = 3.8e-15; eta_in=6.268e-03, eta_out=1.886e-03; F/F(lossless reciprocal)=2.622e-10
+  delta=0.2: local loss=0.80, min eig(Gamma)=+2.397e-02; |G_1s G_s1 - reciprocal partner|/|.| = 1.1e-15; eta_in=2.214e-03, eta_out=1.707e-05; F/F(lossless reciprocal)=1.250e-13
+
+== (d) thermal inputs: full scattering matrix, output occupation at the port ==
+  unitarity ||S S^dag - 1|| = 7.58412718643006e-16
+  |S_pp|^2 = 0.000957; isolated-mode ((gamma-Gp)/(gamma+Gp))^2 = 0.000532; absorptance A = 0.999043 vs 4 gamma Gp/Gamma^2 = 0.999468
+  n_port=0.5, n_int=0.5:  n_out=0.500000 (formula 0.500000);  displacement-QFI factor 1/(2 n_out+1) = 0.5000
+  n_port=0.0, n_int=2.0:  n_out=1.998085 (formula 1.998085);  displacement-QFI factor 1/(2 n_out+1) = 0.2002
+  n_port=2.0, n_int=0.0:  n_out=0.001915 (formula 0.001915);  displacement-QFI factor 1/(2 n_out+1) = 0.9962
+  6 GHz, T=0.02 K: n_b = 5.587e-07,  1/(2 n_b+1) = 1.0000
+  6 GHz, T=0.05 K: n_b = 3.164e-03,  1/(2 n_b+1) = 0.9937
+  6 GHz, T=0.1 K: n_b = 5.950e-02,  1/(2 n_b+1) = 0.8937
+  6 GHz, T=1.0 K: n_b = 2.997e+00,  1/(2 n_b+1) = 0.1430
+  6 GHz, T=4.0 K: n_b = 1.340e+01,  1/(2 n_b+1) = 0.0360

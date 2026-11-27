@@ -1,0 +1,20 @@
+T=1e5/J N=25: exact windowed F = 1.57150e+07; isolated-mode F0 k(Gamma T) = 1.57043e+07; ratio 1.0007  (4s)
+T=1e5/J N=27: exact windowed F = 1.70386e+07; isolated-mode F0 k(Gamma T) = 1.70286e+07; ratio 1.0006  (4s)
+T=1e5/J N=29: exact windowed F = 1.73538e+07; isolated-mode F0 k(Gamma T) = 1.73474e+07; ratio 1.0004  (4s)
+T=1e5/J N=31: exact windowed F = 1.67201e+07; isolated-mode F0 k(Gamma T) = 1.67194e+07; ratio 1.0000  (4s)
+T=1e5/J N=33: exact windowed F = 1.53715e+07; isolated-mode F0 k(Gamma T) = 1.53766e+07; ratio 0.9997  (4s)
+lossy window N=15 gamma=0.0001 T=20000: exact 1.09350e+06, F0(gamma)k(Gamma T) 1.09339e+06, ratio 1.0001
+lossy window N=21 gamma=0.0001 T=50000: exact 1.69115e+06, F0(gamma)k(Gamma T) 1.69209e+06, ratio 0.9994
+lossy window N=31 gamma=3e-05 T=100000: exact 5.76381e+06, F0(gamma)k(Gamma T) 5.76824e+06, ratio 0.9992
+N=50: max over omega at detuning -2.44% of Gamma_p, gain 0.48%
+N=200: max over omega at detuning -2.48% of Gamma_p, gain 0.50%
+N=800: max over omega at detuning -2.49% of Gamma_p, gain 0.50%
+window optimum, chain / corner port: a/b = 1.3333, x* = 7.5533, k(x*) = 0.3399
+window optimum, square lattice, edge port: a/b = 1.0000, x* = 9.7141, k(x*) = 0.4555
+window optimum, cubic lattice, face port: a/b = 0.8000, x* = 11.5614, k(x*) = 0.5325
+window optimum, cubic lattice, edge port: a/b = 1.1429, x* = 8.6863, k(x*) = 0.4041
+exponents for N in [401, 3201]: centre F 3.9960 (4), endpoint F +0.0000 (0), centre rate 0.9990 (1), endpoint rate -2.9970 (-3)
+N=9 T=300/J: windowed F for gamma/J = 0, 1e-4, 3e-4, 1e-3, 3e-3: 1.7228e+02, 1.6951e+02, 1.6413e+02, 1.4673e+02, 1.0727e+02   monotonic decrease: True
+N=9 T=3000/J: windowed F for gamma/J = 0, 1e-4, 3e-4, 1e-3, 3e-3: 1.5631e+05, 1.3894e+05, 1.1050e+05, 5.2899e+04, 1.0078e+04   monotonic decrease: True
+N=9 T=30000/J: windowed F for gamma/J = 0, 1e-4, 3e-4, 1e-3, 3e-3: 6.3455e+05, 5.2010e+05, 3.5907e+05, 1.2199e+05, 1.5445e+04   monotonic decrease: True
+loss and deadline together: N_opt / min(N_star, N_star^(T)) is always <= 1; smallest value 0.8587 at gamma T = 3.98

@@ -1,0 +1,72 @@
+== closed form vs banded solve (centre site) ==
+21 2750116.874363582 2750116.8743636943 4.080712761239849e-14
+101 786.449031421948 786.4490314219215 3.368181805913441e-14
+501 0.002317986544307392 0.0023179865443078295 1.8877762594860036e-13
+1001 4.358776283985017e-06 4.358776283987249e-06 5.120546847553586e-13
+2001 1.3072091312037465e-10 1.3072091312045468e-10 6.122182163064442e-13
+4001 2.1171384744483678e-19 2.1171384744472982e-19 5.052165249336158e-13
+
+== integer optimum, isolation at the optimum ==
+gamma=1e-06 Nstar=99.56 Nopt=99 (odd-only 99) kappa*w1/gamma=1.973 Gamma/DeltaE=0.00100 closed-form estimate=0.00100  N_gamma=5441.4  N_gamma/Nstar=54.7
+gamma=1e-05 Nstar=46.21 Nopt=45 (odd-only 45) kappa*w1/gamma=2.025 Gamma/DeltaE=0.00217 closed-form estimate=0.00216  N_gamma=1720.7  N_gamma/Nstar=37.2
+gamma=0.0001 Nstar=21.45 Nopt=21 (odd-only 21) kappa*w1/gamma=1.841 Gamma/DeltaE=0.00468 closed-form estimate=0.00466  N_gamma=544.1  N_gamma/Nstar=25.4
+gamma=0.001 Nstar=9.96 Nopt=9 (odd-only 9) kappa*w1/gamma=1.910 Gamma/DeltaE=0.01024 closed-form estimate=0.01004  N_gamma=172.1  N_gamma/Nstar=17.3
+
+== exact / single-mode / scaling function, centre site ==
+-- gamma/J = 0.0001, N_gamma = 544, attenuation length for F: (1/2)sqrt(J/gamma) = 50.0
+N=    21 gamma/DeltaE=   0.0016 Gp/gamma=1.841e+00 F_exact= 2.750e+06 exact/mode=9.9946e-01 exact/scaling=  0.0151
+N=    45 gamma/DeltaE=   0.0072 Gp/gamma=2.025e-01 F_exact= 2.365e+05 exact/mode=9.9672e-01 exact/scaling=  0.4752
+N=    99 gamma/DeltaE=   0.0338 Gp/gamma=1.973e-02 F_exact= 9.173e+02 exact/mode=9.9509e-01 exact/scaling=  0.9198
+N=   101 gamma/DeltaE=   0.0352 Gp/gamma=1.859e-02 F_exact= 7.864e+02 exact/mode=9.9507e-01 exact/scaling=  0.9239
+N=   201 gamma/DeltaE=   0.1378 Gp/gamma=2.395e-03 F_exact= 3.539e+00 exact/mode=9.9322e-01 exact/scaling=  0.9851
+N=   301 gamma/DeltaE=   0.3080 Gp/gamma=7.166e-04 F_exact= 1.419e-01 exact/mode=9.8690e-01 exact/scaling=  0.9916
+N=   545 gamma/DeltaE=   1.0069 Gp/gamma=1.213e-04 F_exact= 1.157e-03 exact/mode=9.1648e-01 exact/scaling=  0.9937
+N=  1001 gamma/DeltaE=   3.3909 Gp/gamma=1.962e-05 F_exact= 4.359e-06 exact/mode=4.4406e-01 exact/scaling=  0.9939
+N=  1721 gamma/DeltaE=  10.0149 Gp/gamma=3.866e-06 F_exact= 2.322e-09 exact/mode=1.8000e-02 exact/scaling=  0.9940
+N=  2001 gamma/DeltaE=  13.5365 Gp/gamma=2.460e-06 F_exact= 1.307e-10 exact/mode=3.3819e-03 exact/scaling=  0.9940
+N=  4001 gamma/DeltaE=  54.0920 Gp/gamma=3.080e-07 F_exact= 2.117e-19 exact/mode=1.3966e-09 exact/scaling=  0.9940
+N=  5441 gamma/DeltaE= 100.0221 Gp/gamma=1.225e-07 F_exact= 1.106e-25 exact/mode=8.5295e-15 exact/scaling=  0.9940
+N= 10001 gamma/DeltaE= 337.8724 Gp/gamma=1.973e-08 F_exact= 1.600e-45 exact/mode=1.6065e-32 exact/scaling=  0.9939
+N= 20001 gamma/DeltaE=1351.2193 Gp/gamma=2.467e-09 F_exact= 5.664e-89 exact/mode=1.4549e-73 exact/scaling=  0.9937
+-- gamma/J = 1e-05, N_gamma = 1721, attenuation length for F: (1/2)sqrt(J/gamma) = 158.1
+N=    21 gamma/DeltaE=   0.0002 Gp/gamma=1.841e+01 F_exact= 1.263e+07 exact/mode=9.9999e-01 exact/scaling=  0.0000
+N=    45 gamma/DeltaE=   0.0007 Gp/gamma=2.025e+00 F_exact= 5.922e+07 exact/mode=9.9949e-01 exact/scaling=  0.0119
+N=    99 gamma/DeltaE=   0.0034 Gp/gamma=1.973e-01 F_exact= 4.834e+06 exact/mode=9.9661e-01 exact/scaling=  0.4846
+N=   101 gamma/DeltaE=   0.0035 Gp/gamma=1.859e-01 F_exact= 4.286e+06 exact/mode=9.9655e-01 exact/scaling=  0.5035
+N=   201 gamma/DeltaE=   0.0138 Gp/gamma=2.395e-02 F_exact= 3.257e+04 exact/mode=9.9527e-01 exact/scaling=  0.9052
+N=   301 gamma/DeltaE=   0.0308 Gp/gamma=7.166e-03 F_exact= 1.394e+03 exact/mode=9.9501e-01 exact/scaling=  0.9670
+N=   545 gamma/DeltaE=   0.1007 Gp/gamma=1.213e-03 F_exact= 1.249e+01 exact/mode=9.9414e-01 exact/scaling=  0.9901
+N=  1001 gamma/DeltaE=   0.3391 Gp/gamma=1.962e-04 F_exact= 9.667e-02 exact/mode=9.8560e-01 exact/scaling=  0.9941
+N=  1721 gamma/DeltaE=   1.0015 Gp/gamma=3.866e-05 F_exact= 1.184e-03 exact/mode=9.1778e-01 exact/scaling=  0.9946
+N=  2001 gamma/DeltaE=   1.3537 Gp/gamma=2.460e-05 F_exact= 3.324e-04 exact/mode=8.6017e-01 exact/scaling=  0.9946
+N=  4001 gamma/DeltaE=   5.4092 Gp/gamma=3.080e-06 F_exact= 2.674e-07 exact/mode=1.7639e-01 exact/scaling=  0.9947
+N=  5441 gamma/DeltaE=  10.0022 Gp/gamma=1.225e-06 F_exact= 2.350e-09 exact/mode=1.8124e-02 exact/scaling=  0.9947
+N= 10001 gamma/DeltaE=  33.7872 Gp/gamma=1.973e-07 F_exact= 9.960e-16 exact/mode=1.0001e-06 exact/scaling=  0.9947
+N= 20001 gamma/DeltaE= 135.1219 Gp/gamma=2.467e-08 F_exact= 1.576e-29 exact/mode=4.0475e-18 exact/scaling=  0.9947
+-- gamma/J = 1e-06, N_gamma = 5441, attenuation length for F: (1/2)sqrt(J/gamma) = 500.0
+N=    21 gamma/DeltaE=   0.0000 Gp/gamma=1.841e+02 F_exact= 1.527e+07 exact/mode=1.0000e+00 exact/scaling=  0.0000
+N=    45 gamma/DeltaE=   0.0001 Gp/gamma=2.025e+01 F_exact= 2.433e+08 exact/mode=9.9999e-01 exact/scaling=  0.0000
+N=    99 gamma/DeltaE=   0.0003 Gp/gamma=1.973e+00 F_exact= 1.275e+09 exact/mode=9.9945e-01 exact/scaling=  0.0128
+N=   101 gamma/DeltaE=   0.0004 Gp/gamma=1.859e+00 F_exact= 1.272e+09 exact/mode=9.9941e-01 exact/scaling=  0.0149
+N=   201 gamma/DeltaE=   0.0014 Gp/gamma=2.395e-01 F_exact= 1.519e+08 exact/mode=9.9680e-01 exact/scaling=  0.4223
+N=   301 gamma/DeltaE=   0.0031 Gp/gamma=7.166e-02 F_exact= 1.088e+07 exact/mode=9.9570e-01 exact/scaling=  0.7549
+N=   545 gamma/DeltaE=   0.0101 Gp/gamma=1.213e-02 F_exact= 1.198e+05 exact/mode=9.9515e-01 exact/scaling=  0.9483
+N=  1001 gamma/DeltaE=   0.0339 Gp/gamma=1.962e-03 F_exact= 9.691e+02 exact/mode=9.9494e-01 exact/scaling=  0.9873
+N=  1721 gamma/DeltaE=   0.1001 Gp/gamma=3.866e-04 F_exact= 1.281e+01 exact/mode=9.9419e-01 exact/scaling=  0.9935
+N=  2001 gamma/DeltaE=   0.1354 Gp/gamma=2.460e-04 F_exact= 3.836e+00 exact/mode=9.9351e-01 exact/scaling=  0.9940
+N=  4001 gamma/DeltaE=   0.5409 Gp/gamma=3.080e-05 F_exact= 1.473e-02 exact/mode=9.7161e-01 exact/scaling=  0.9948
+N=  5441 gamma/DeltaE=   1.0002 Gp/gamma=1.225e-05 F_exact= 1.190e-03 exact/mode=9.1813e-01 exact/scaling=  0.9949
+N= 10001 gamma/DeltaE=   3.3787 Gp/gamma=1.973e-06 F_exact= 4.449e-06 exact/mode=4.4670e-01 exact/scaling=  0.9949
+N= 20001 gamma/DeltaE=  13.5122 Gp/gamma=2.467e-07 F_exact= 1.333e-10 exact/mode=3.4232e-03 exact/scaling=  0.9949
+
+== local exponent d ln F / d ln N (exact), minimum and where ==
+gamma=0.0001: Nstar=21.5 N_gamma=544; slope at sqrt(Nstar*Ngam)=-7.748; -8+-10% window: N in [69, 683] (ratio 9.90)
+gamma=1e-05: Nstar=46.2 N_gamma=1721; slope at sqrt(Nstar*Ngam)=-7.869; -8+-10% window: N in [145, 2169] (ratio 14.96)
+gamma=1e-06: Nstar=99.6 N_gamma=5441; slope at sqrt(Nstar*Ngam)=-7.931; -8+-10% window: N in [309, 6889] (ratio 22.29)
+gamma=1e-08: Nstar=462.1 N_gamma=54414; slope at sqrt(Nstar*Ngam)=-7.980; -8+-10% window: N in [1409, 59415] (ratio 42.17)
+
+== attenuation: -ln(F)/N slope at large N vs sqrt(gamma/J) (centre) and endpoint 2 sqrt(gamma/J) ==
+gamma=0.0001 centre: decay rate per site = 0.010002; prediction 1 sqrt(gamma/J) = 0.010000
+gamma=0.0001 far end: decay rate per site = 0.020003; prediction 2 sqrt(gamma/J) = 0.020000
+gamma=1e-05 centre: decay rate per site = 0.003167; prediction 1 sqrt(gamma/J) = 0.003162
+gamma=1e-05 far end: decay rate per site = 0.006335; prediction 2 sqrt(gamma/J) = 0.006325

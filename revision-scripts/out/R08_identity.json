@@ -1,0 +1,49 @@
+{
+ "table": [
+  [
+   "real-symmetric H0, diagonal loss",
+   true,
+   true,
+   7.448553459864583e-16,
+   1.2846155975391643e-15,
+   6.106226635438361e-16,
+   165
+  ],
+  [
+   "flux (complex Hermitian) H0, diagonal loss",
+   false,
+   false,
+   8.807793574452476e-16,
+   4.737642292434163e-15,
+   0.4390186372359067,
+   164
+  ],
+  [
+   "real-symmetric H0, real-symmetric non-diagonal loss",
+   true,
+   true,
+   1.0139028605190634e-15,
+   1.2570547326056544e-14,
+   4.440892098500626e-15,
+   180
+  ],
+  [
+   "real-symmetric H0, complex-Hermitian non-diagonal loss",
+   true,
+   false,
+   6.975822041447604e-16,
+   7.742994076457948e-15,
+   0.415619254516239,
+   180
+  ],
+  [
+   "flux H0, complex-Hermitian non-diagonal loss",
+   false,
+   false,
+   7.837467582399369e-16,
+   2.570184378574209e-14,
+   0.4606957039853407,
+   180
+  ]
+ ]
+}
