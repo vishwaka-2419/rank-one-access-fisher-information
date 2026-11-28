@@ -100,7 +100,7 @@ if __name__ == "__main__":
                 print("    S(u)   :", " ".join(f"{r[2]:8.5f}" for r in row))
                 print("    n_int  :", " ".join(f"{r[3]:8.5f}" for r in row))
 
-    print("\n== GPT's quoted values: N=4, s=2, kappa/J=0.2, beta/sqrt(J) = 0.001, 0.02, 0.05, 0.10 ==")
+    print("\n== Quoted values: N=4, s=2, kappa/J=0.2, beta/sqrt(J) = 0.001, 0.02, 0.05, 0.10 ==")
     N, s, kappa = 4, 2, 0.2
     Flin = rof.chain_F(N, s, kappa, 0.0); Gp = kappa * rof.chain_w(N, 1)
     for beta in [0.001, 0.02, 0.05, 0.10]:
